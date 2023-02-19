@@ -30,8 +30,7 @@ import com.vipulasri.jetinstagram.ui.HomeSection.Profile
 import com.vipulasri.jetinstagram.ui.HomeSection.Reels
 import com.vipulasri.jetinstagram.ui.components.bottomBarHeight
 import com.vipulasri.jetinstagram.ui.components.icon
-import com.vipulasri.jetinstagram.ui.home.Home
-import com.vipulasri.jetinstagram.ui.home.PostPage
+import com.vipulasri.jetinstagram.ui.home.*
 import com.vipulasri.jetinstagram.ui.reels.Reels
 
 @ExperimentalFoundationApi
@@ -60,8 +59,8 @@ fun MainScreen() {
                 Home -> Home()
                 Reels -> Reels()
                 Add -> PostPage()
-                Favorite -> Content(title = "Favorite")
-                Profile -> Content(title = "Profile")
+                Favorite -> FavScaffold()
+                Profile -> ProfileSection()
             }
         }
     }
@@ -163,6 +162,7 @@ private enum class HomeSection(
     Reels(R.drawable.ic_outlined_reels, R.drawable.ic_filled_reels),
     Add(R.drawable.ic_outlined_add, R.drawable.ic_outlined_add),
     Favorite(R.drawable.ic_outlined_favorite, R.drawable.ic_filled_favorite),
-    Profile(R.drawable.ic_outlined_reels, R.drawable.ic_outlined_reels)
+    Profile(R.drawable.ic_outlined_reels, R.drawable.ic_outlined_reels);
+
 }
 

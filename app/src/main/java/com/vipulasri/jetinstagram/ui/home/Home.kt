@@ -86,7 +86,7 @@ private fun Toolbar() {
 }
 
 @Composable
-private fun StoriesSection(stories: List<Story>) {
+fun StoriesSection(stories: List<Story>) {
     Column {
         StoriesList(stories)
         Spacer(modifier = Modifier.height(10.dp))

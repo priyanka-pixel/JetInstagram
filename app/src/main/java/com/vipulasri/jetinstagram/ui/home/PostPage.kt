@@ -105,14 +105,14 @@ private fun TagPeople() {
     ExpandableSection(name = "Tag People") {
         InstagramAccountToggle(
             name = names[2],
-            image = "https://randomuser.me/api/portraits/men/2.jpg"
+            image = "https://randomuser.me/api/portraits/men/5.jpg"
         )
         InstagramAccountToggle(
             name = names[3],
             image = "https://randomuser.me/api/portraits/men/3.jpg"
         )
         InstagramAccountToggle(
-            name = names[4],
+            name = names[6],
             image = "https://randomuser.me/api/portraits/men/4.jpg"
         )
     }
@@ -123,7 +123,7 @@ private fun TagPeople() {
 private fun AddLocation() {
     ExpandableSection(name = "Add Location") {
         Text(
-            text = "Tap here to show location suggestions",
+            text = "Location",
             color = Color.Gray,
             modifier = Modifier.padding(12.dp)
         )
@@ -133,6 +133,11 @@ private fun AddLocation() {
 @Composable
 private fun AddFundraiser() {
     ExpandableSection(name = "Add Fundraiser") {
+        Text(
+            text = "fundraiser",
+            color = Color.Gray,
+            modifier = Modifier.padding(12.dp)
+        )
         Spacer(Modifier.height(40.dp))
     }
 }
@@ -143,11 +148,11 @@ private fun PostToOtherInstagramAccounts() {
         InstagramAccountToggle(name = currentUser.name, image = currentUser.image)
         InstagramAccountToggle(
             name = names[0],
-            image = "https://randomuser.me/api/portraits/men/1.jpg"
+            image = "https://randomuser.me/api/portraits/men/4.jpg"
         )
         InstagramAccountToggle(
-            name = names[1],
-            image = "https://randomuser.me/api/portraits/men/2.jpg"
+            name = names[4],
+            image = "https://randomuser.me/api/portraits/men/3.jpg"
         )
     }
 }
